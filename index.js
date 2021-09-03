@@ -7,16 +7,13 @@ exports.http_template = (request, response) => {
 
   // This cloud function looks for JSON or text in the request, and returns a response.
   // If the request body is not JSON or text, it returns a "400 Bad Request" error.
-
   try {
     if (request.is('application/json')) {
-        request_json = request.get_json(silent=True)
-        console.log(json.dumps(request_json, indent=2))
+        console.log(request.body)
     } else if (request.is('text/plain')) {
         console.log(request.data)
     } else {throw new Error(":(")}
-    response.status(200).send(`I received your ${request.get('Content-Type')
-  } request`) 
+    response.status(200).send(`I received your ${request.get('Content-Type')} request`) 
   } catch (e) {
       response.status(400).send('Bad Request - you didnt POST me any JSON or text') 
   };

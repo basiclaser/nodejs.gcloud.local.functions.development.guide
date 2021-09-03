@@ -20,6 +20,7 @@ To install this project to your machine ( line by line, not all together )
 cd myProjectsFolder
 git clone git@github.com:basiclaser/nodejs.gcloud.local.development.guide.git
 cd nodejs.gcloud.local.development.guide
+npm install
 ```
 
 Treat this local project like a normal GIT project. Make commits as you make changes. This will enable you to roll back to previous versions if you make a mistake.
@@ -32,6 +33,12 @@ You can edit your cloud functions in the `index.js` file. Don't delete the comme
 
 ```
 npx @google-cloud/functions-framework --target=http_template
+```
+
+or you can make your own run scripts for your functions in package.json
+
+```
+npm run http_template
 ```
 
 this runs the http_template function in index.js. Then you'll get a URL such as `http://192.168.178.29:8080/` that you can test with - this is a local equivalent of the usual "webhook" URL.

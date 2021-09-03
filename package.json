@@ -4,7 +4,7 @@
   "description": "this guide focuses on showing you how to code, locally debug and deploy cloud functions to Google Cloud Platform",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "http_template": "functions-framework --target=http_template"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/basiclaser/nodejs.gcloud.local.functions.development.guide/issues"
   },
-  "homepage": "https://github.com/basiclaser/nodejs.gcloud.local.functions.development.guide#readme"
+  "homepage": "https://github.com/basiclaser/nodejs.gcloud.local.functions.development.guide#readme",
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.1.1"
+  }
 }
