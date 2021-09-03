@@ -20,7 +20,6 @@ To install this project to your machine
 cd myProjectsFolder
 git clone git@github.com:basiclaser/nodejs.gcloud.local.development.guide.git
 cd nodejs.gcloud.local.development.guide
-pip install -r requirements.txt
 ```
 
 Treat this local project like a normal GIT project. Make commits as you make changes. This will enable you to roll back to previous versions if you make a mistake.
