@@ -14,7 +14,7 @@ not installing an extra python as it may lead you to being very confused about w
 
 #### #2 this project
 
-To install this project to your machine
+To install this project to your machine ( line by line, not all together )
 
 ```
 cd myProjectsFolder
